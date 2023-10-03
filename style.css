@@ -1,98 +1,60 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-  }
-  
-  nav a {
-    color: #fff;
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    background-color: #666;
-  }
-  
-  section {
-    padding: 50px;
-  }
-  
-  section h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  li {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #333;
-  }
-    a:hover {
-        text-decoration: none;
-      }
-      
-      form label {
-        display: block;
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-      
-      form input,
-      form textarea {
-        border: none;
-        border-radius: 5px;
-        font-size: 18px;
-        padding: 10px;
-        width: 100%;
-        margin-bottom: 20px;
-      }
-      
-      form input[type="submit"] {
-        background-color: #333;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        cursor: pointer;
-        font-size: 20px;
-        padding: 10px;
-        width: auto;
-      }
-      
-      form input[type="submit"]:hover {
-        background-color: #666;
-      }
-      
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
 
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+h1, h2 {
+  color: #333366;
+}
+
+p, ul {
+  color: #666666;
+}
+
+nav {
+  margin-bottom: 50px;
+}
+
+nav .nav-link {
+  color: white;
+  transition: color 0.3s ease-in-out;
+}
+
+nav .nav-link:hover {
+  color: #FFD700; /* Gold color on hover */
+  text-decoration: none;
+}
+
+section {
+  padding: 20px;
+  border-radius: 5px;
+  background: #f8f9fa;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-10px); /* Small lift on hover */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #333366; /* Dark background for footer */
+  color: white; /* White text for footer */
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+}
